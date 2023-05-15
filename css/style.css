@@ -4,10 +4,38 @@
     box-sizing: border-box;
 }
 
+header{
+    background-color: rgb(233, 71, 71);
+    height: 200px;
+}
+
 div.button{
     font-size: 1rem;
     padding: 0.5rem;
     background-color: blue;
     color: white;
     border-radius: 3px;
+}
+
+div.my_right_side{
+    width: 60%;
+}
+
+div.my_form-container{
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 70%;
+    height: 50vh;
+}
+
+div.my_left_side{
+    width: 40%;
+    height: calc(100vh - 200px);
+    background-image: url(../img/rail_image.jpg);
+    background-size: cover;
+}
+
+div.final-price{
+    background-color: rgb(85, 85, 85);
+    border-radius: 5px;
 }

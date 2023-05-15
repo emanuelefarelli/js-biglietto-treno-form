@@ -19,27 +19,51 @@
 </head>
 <body>
     
-    <form>
-        <div>
-            <label for="tot-km">
-                Inserire i chilometri da percorrere:
-            </label>
-            <input type="text" name="tot-km" id="tot-km">
-        </div>
+    <header class="text-light d-flex flex-column align-items-center justify-content-center">
+        <h1 class="fs-2 text-uppercase">
+            treninritardoitalia!
+        </h1>
+        <p class="fs-4">
+            Calcola il prezzo del treno che (non) arriverà in orario!
+        </p>
+    </header>
 
-        <div>
-            <label for="user-age">
-                Inserire la tua età:
-            </label>
-            <input type="text" name="user-age" id="user-age">
-        </div>
-        
-        <div>
-            <div class="button d-inline-block">
-                Calcola prezzo!
+
+    <main class="d-flex">
+        <div class="my_right_side d-flex justify-content-center align-items-center">
+            <div class="my_form-container">
+                <form class="d-flex flex-column align-items-center">
+                    <div class="w-75 d-flex justify-content-between pb-2 pt-4">
+                        <label for="tot-km">
+                            Inserire i chilometri da percorrere:
+                        </label>
+                        <input type="text" name="tot-km" id="tot-km">
+                    </div>
+            
+                    <div class="w-75 d-flex justify-content-between py-2">
+                        <label for="user-age">
+                            Inserire la tua età:
+                        </label>
+                        <input type="text" name="user-age" id="user-age">
+                    </div>
+            
+                    <div>
+                        <div class="button d-inline-block my-4">
+                            Calcola prezzo!
+                        </div>
+                    </div>
+
+                    <div id="final-price" class="final-price p-2 my-4 text-light">
+                        Il tuo prezzo è:
+                    </div>
+                </form>
             </div>
         </div>
-    </form>
+
+        <div class="my_left_side">
+            
+        </div>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

@@ -26,8 +26,7 @@ myButton.addEventListener('click',
                 return;
             }
 
-            console.log(userAge.value)
-            console.log("Il prezzo del tuo biglietto è: ",ticketPrice)
+            document.getElementById('final-price').innerHTML += ticketPrice.toFixed(2) + '€';
             priceYetCalculated = true;
         }
     }
